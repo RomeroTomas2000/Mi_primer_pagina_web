@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="imagenes/playstation-icono.ico">
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <title>Foro</title>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="foro.html">Foro</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="fondo-principal">
+            <h1 class="titulo-principal">Foro</h1>
+            <p class="descripcion-web" >En esta sección podras elegir sobre la temática a debatir con las demás personas. Podras leer las reseñas de los demás. Le pediremos su correo electrónico solamente para notificarle cuando reciba una respuesta.</p>
+            <form>
+                <fieldset>
+                    <legend>¿Sobre que videojuego quiere enviar su mensaje/reseña?</legend>
+                        <select class="seleccionar-tema">
+                            <option>Silent Hill 2</option>
+                            <option>Fatal Frame 2</option>
+                            <option>Silent Hill 3</option>
+                            <option>Fatal Frame 3</option>
+                        </select>
+                </fieldset>
+                <label for="nombreusuario">Nombre de Usuario</label>
+                <input type="text" id="nombreusuario" class="input-foro" required>
+                <label for="correoelectronico">Correo Electrónico</label>
+                <input type="text" id="correoelectronico" class="input-foro" placeholder="email@dominio.com">
+                <label id="mensaje">Mensaje</label>
+                <input id="mensaje" class="input-foro-mensaje" required></input>
+                <label class="checkbox"><input type="checkbox"> ¿Le gustaría recibir novedades sobre las nuevas publicaciones de la página?</label>
+                <input type="submit" value="Enviar" class="enviar">                
+            </form>
+        </main>
+    </body>
+</html>
